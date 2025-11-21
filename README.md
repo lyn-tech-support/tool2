@@ -104,7 +104,7 @@ go build -o weibo-sender
 
 ```bash
 # 编辑配置文件
-vi ~/.weibo-sender/config.json
+vi /config.json
 
 # 修改 send_delay 值，例如改为 3 秒
 {
@@ -139,13 +139,13 @@ vi ~/.weibo-sender/config.json
 A: 请确保在浏览器中完全登录成功，并等待页面完全加载后再关闭。
 
 **Q: 发送消息失败，提示 401 或 403 错误？**
-A: Cookie 可能已过期，删除配置文件后重新运行：`rm ~/.weibo-sender/config.json && ./weibo-sender`
+A: Cookie 可能已过期，删除配置文件后重新运行：`rm ./config.json && ./weibo-sender`
 
 **Q: 找不到 Chrome 浏览器？**
 A: 请确保已安装 Chrome 浏览器，并且在系统 PATH 中可以找到。
 
 **Q: 如何调整发送间隔时间？**
-A: 编辑配置文件 `~/.weibo-sender/config.json`，修改 `send_delay` 值（单位：秒）。
+A: 编辑配置文件 `./config.json`，修改 `send_delay` 值（单位：秒）。
 
 **Q: 可以一次发送给所有群组吗？**
 A: 可以，在选择群组时输入 `all` 即可选择所有搜索到的群组。
